@@ -37,12 +37,11 @@ export default class App extends React.Component {
       <View style={styles.container}>
         <Button
           title="Gerar números da loteria"
-          color="#030202"
           onPress={() => {
             this.generateRandomNumber();
           }}
         />
-        <Text style={styles.text}> Números do sorteio: </Text>
+        <Text style={styles.text}> Resultado</Text>
         <Text style={styles.result}>{this.state.number}</Text>
       </View>
     );
@@ -52,17 +51,17 @@ export default class App extends React.Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#cecece',
+    backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
-    color: '#fff',
+    color: '#000',
   },
   result: {
-    color: '#fff',
+    color: '#000',
     fontSize: 24,
   },
   text: {
-    color: '#fff',
+    color: '#000',
     fontSize: 24,
   },
 });
